@@ -1,7 +1,8 @@
 package jade;
 
+import util.Constants;
+
 import java.awt.*;
-import java.sql.SQLOutput;
 
 public class LevelEditorScene extends Scene {
     public LevelEditorScene(String name) {
@@ -15,11 +16,11 @@ public class LevelEditorScene extends Scene {
 
     @Override
     public void update(double dt) {
-        
     }
 
     @Override
     public void draw(Graphics2D g2) {
-
+        g2.setColor(Color.BLUE);
+        g2.fillRect(0, 0, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
     }
 }
